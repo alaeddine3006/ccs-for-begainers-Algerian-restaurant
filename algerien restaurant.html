@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casbah Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Personnalisation */
+        .hero {
+            background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/63/86/bf/caption.jpg?w=900&h=500&s=1') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+        .music-control button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .music-control input {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Casbah Vibes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu-section">Menu</a></li> <!-- 🔥 Lien vers la section menu -->
+                    <li class="nav-item"><a class="nav-link" href="#about-section">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Héros -->
+    <header id="Accueil" class="hero">
+        <div>
+            <h1>Découvrez la gastronomie algérienne chez Casbah Vibes</h1>
+            <a href="#menu-section" class="btn btn-warning mt-3">Voir le menu</a> <!-- 🔥 Lien direct au menu -->
+        </div>
+    </header>
+
+    <!-- Section Menu -->
+    <section id="menu-section" class="container my-5"> <!-- 📍 Ajout de l'id pour l'ancre -->
+        <h2 class="text-center mb-4">Notre Menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card menu-item">
+                    <img src="https://img.cuisineaz.com/660x495/2016/01/25/i20703-couscous-royal-algerien-version-longue-cuisineaz.webp" alt="Couscous Royal">
+                    <div class="card-body">
+                        <h5 class="card-title">Couscous Royal</h5>
+                        <p class="card-text">Un plat traditionnel avec légumes et viande.</p>
+                        <p class="fw-bold">3 765 DZD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-item">
+                    <img src="https://media.istockphoto.com/id/1143191816/fr/photo/tajine-de-poulet-marocain-traditionnel-avec-olives-et-citrons-sal%C3%A9s.jpg?s=612x612&w=0&k=20&c=jlFa0-6_WvCJ8wzk5l4NDXMBU1OLl1uzFIzkgBGxyZM=" alt="Tajine aux olives">
+                    <div class="card-body">
+                        <h5 class="card-title">Tajine aux olives</h5>
+                        <p class="card-text">Poulet mijoté aux olives et épices.</p>
+                        <p class="fw-bold">3 015 DZD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-item">
+                    <img src="https://www.francoislambert.one/cdn/shop/articles/brick_a_l_oeuf.png?v=1719250465&width=1100" alt="Brik à l'œuf">
+                    <div class="card-body">
+                        <h5 class="card-title">Brik à l'œuf</h5>
+                        <p class="card-text">Feuilleté croustillant garni d'un œuf et de thon.</p>
+                        <p class="fw-bold">1 759 DZD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos de nous -->
+    <section id="about-section" class="container my-5">
+        <h2 class="text-center mb-4">À propos de nous</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/63/86/bf/caption.jpg?w=900&h=500&s=1" 
+                     alt="Intérieur du restaurant" 
+                     class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <strong>Casbah Vibes</strong> est un restaurant authentique qui vous plonge dans l'atmosphère envoûtante de l'Algérie. 
+                    Nous proposons des plats traditionnels préparés avec des ingrédients frais et des recettes transmises de génération en génération. 
+                    Que vous soyez un amateur de <em>couscous royal</em>, de <em>tajine aux olives</em> ou d'une délicieuse <em>brik à l'œuf</em>, 
+                    notre menu saura éveiller vos papilles.
+                </p>
+                <p>
+                    Venez découvrir une expérience culinaire unique, dans un cadre chaleureux inspiré des maisons traditionnelles algériennes.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact -->
+    <section id="contact-section" class="container my-5">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">© 2025 Casbah Vibes. Tous droits réservés.</p>
+            <div>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="https://www.pngarts.com/files/10/Facebook-Instagram-YouTube-Logo-PNG-Background-Image.png" 
+                         alt="Icônes de réseaux sociaux" 
+                         style="width: 100px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Musique -->
+    <audio id="background-music" autoplay loop>
+        <source src="https://clip.junodownload.com/MP3/SF5517246-02-01-04.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'audio.
+    </audio>
+
+    <!-- Contrôle de la musique -->
+    <div class="music-control">
+        <button id="music-toggle">⏸️</button>
+        <br>
+        <label for="volume-control">🔊 Volume</label>
+        <input type="range" id="volume-control" min="0" max="1" step="0.05" value="0.25">
+    </div>
+
+    <script>
+        // Gestion de la musique
+        const music = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+        const volumeControl = document.getElementById('volume-control');
+
+        // Démarrer la musique avec volume à 25%
+        music.volume = 0.25;
+
+        // Gestion du bouton Play/Pause
+        musicToggle.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                musicToggle.textContent = '⏸️'; // Icône Pause
+            } else {
+                music.pause();
+                musicToggle.textContent = '▶️'; // Icône Play
+            }
+        });
+
+        // Contrôle du volume
+        volumeControl.addEventListener('input', function() {
+            music.volume = volumeControl.value;
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
